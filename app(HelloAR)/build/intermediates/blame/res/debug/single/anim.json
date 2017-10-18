@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_slide_out_top.xml"
+    },
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "E:\\ARDemo\\app(HelloAR)\\build\\intermediates\\res\\merged\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\Administrator\\.android\\build-cache\\318c8f3fb55fbeb058c15f4887d0a7b87a973e6f\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    }
+]
