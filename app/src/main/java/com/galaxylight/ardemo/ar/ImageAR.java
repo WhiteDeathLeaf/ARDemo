@@ -8,7 +8,7 @@
 
 package com.galaxylight.ardemo.ar;
 
-import com.galaxylight.ardemo.render.BoxRenderer;
+import com.galaxylight.ardemo.renderer.BoxRenderer;
 
 import cn.easyar.Frame;
 import cn.easyar.ImageTarget;
@@ -16,6 +16,9 @@ import cn.easyar.Target;
 import cn.easyar.TargetInstance;
 import cn.easyar.TargetStatus;
 
+/**
+ * Created by gzh on 2017-10-18.
+ */
 public class ImageAR extends BaseAR {
     private BoxRenderer box_renderer;
 

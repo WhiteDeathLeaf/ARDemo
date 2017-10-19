@@ -68,7 +68,7 @@ public abstract class BaseAR {
             tracker.loadTarget(target, new FunctorOfVoidFromPointerOfTargetAndBool() {
                 @Override
                 public void invoke(Target target, boolean status) {
-                    Log.i("VideoAR", String.format("load target (%b): %s (%d)", status, target.name(), target.runtimeID()));
+                    Log.i("AR", String.format("load target (%b): %s (%d)", status, target.name(), target.runtimeID()));
                 }
             });
         }
@@ -78,13 +78,11 @@ public abstract class BaseAR {
         camera = new CameraDevice();
         streamer = new CameraFrameStreamer();
         streamer.attachCamera(camera);
-
-        boolean status = true;
-        status &= camera.open(CameraDeviceType.Default);
+        boolean status;
+        status = camera.open(CameraDeviceType.Default);
         camera.setSize(new Vec2I(1280, 720));
-
         if (!status) {
-            return status;
+            return false;
         }
         ImageTracker tracker = new ImageTracker();
         tracker.attachStreamer(streamer);
@@ -93,8 +91,7 @@ public abstract class BaseAR {
         loadAllFromJsonFile(tracker, "targets.json");
         loadFromImage(tracker, "namecard.jpg");
         trackers.add(tracker);
-
-        return status;
+        return true;
     }
 
     @CallSuper
@@ -118,10 +115,12 @@ public abstract class BaseAR {
     }
 
     public boolean start() {
-        boolean status = true;
-        status &= (camera != null) && camera.start();
+        boolean status;
+        status = (camera != null) && camera.start();
         status &= (streamer != null) && streamer.start();
-        camera.setFocusMode(CameraDeviceFocusMode.Continousauto);
+        if (camera != null) {
+            camera.setFocusMode(CameraDeviceFocusMode.Continousauto);
+        }
         for (ImageTracker tracker : trackers) {
             status &= tracker.start();
         }

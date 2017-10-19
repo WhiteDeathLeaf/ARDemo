@@ -9,7 +9,7 @@
 package com.galaxylight.ardemo.ar;
 
 import com.galaxylight.ardemo.custom.ARVideo;
-import com.galaxylight.ardemo.render.VideoRenderer;
+import com.galaxylight.ardemo.renderer.VideoRenderer;
 
 import java.util.ArrayList;
 
@@ -19,6 +19,9 @@ import cn.easyar.Target;
 import cn.easyar.TargetInstance;
 import cn.easyar.TargetStatus;
 
+/**
+ * Created by gzh on 2017-10-18.
+ */
 public class VideoAR extends BaseAR {
     private ArrayList<VideoRenderer> video_renderers;
     private VideoRenderer current_video_renderer;

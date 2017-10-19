@@ -16,6 +16,9 @@ import cn.easyar.VideoPlayer;
 import cn.easyar.VideoStatus;
 import cn.easyar.VideoType;
 
+/**
+ * Created by gzh on 2017-10-18.
+ */
 public class ARVideo {
     private VideoPlayer player;
     private boolean prepared;
@@ -68,8 +71,8 @@ public class ARVideo {
         });
     }
 
-    public void setVideoStatus(int status) {
-        Log.i("VideoAR", "video: " + path + " (" + Integer.toString(status) + ")");
+    private void setVideoStatus(int status) {
+        Log.i("AR", "video: " + path + " (" + Integer.toString(status) + ")");
         if (status == VideoStatus.Ready) {
             prepared = true;
             if (found) {
