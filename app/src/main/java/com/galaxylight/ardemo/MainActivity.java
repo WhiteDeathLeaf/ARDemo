@@ -24,9 +24,9 @@ public class MainActivity extends AppCompatActivity implements EasyPermissions.P
 
     private static final String KEY = "sEOpdpSZhSdqJWAUMuDMfkpydIVt2LLXW7ntJjjGTOJE9m81vpkadSQjKzbAbVA4hivzEPoXTjPiF4F22ripW5882tP4EIDuoYQbdikmtxaftbtRsvAbGWaXa4zKcvKDzl1ntoKUBGAEyHMjnvdIb9P2M6Lb6PngsZ5XZiogiCxvRlMl9SPhiuffe2sTK656nLbNwn3K";
     private static final int RC_CAMERA_WRITE = 1;
+    private GLView glView;
     @BindView(R.id.preview)
     FrameLayout preview;
-    private GLView glView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

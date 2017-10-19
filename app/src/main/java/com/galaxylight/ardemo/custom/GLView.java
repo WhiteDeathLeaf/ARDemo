@@ -25,32 +25,32 @@ import cn.easyar.Engine;
  * Created by gzh on 2017-10-18.
  */
 public class GLView extends GLSurfaceView {
-    private final VideoAR helloAR;
+    private final VideoAR videoAR;
 
     public GLView(Context context) {
         super(context);
         setEGLContextFactory(new ContextFactory());
         setEGLConfigChooser(new ConfigChooser());
-        helloAR = new VideoAR();
+        videoAR = new VideoAR();
         this.setRenderer(new Renderer() {
             @Override
             public void onSurfaceCreated(GL10 gl, EGLConfig config) {
-                synchronized (helloAR) {
-                    helloAR.initGL();
+                synchronized (videoAR) {
+                    videoAR.initGL();
                 }
             }
 
             @Override
             public void onSurfaceChanged(GL10 gl, int w, int h) {
-                synchronized (helloAR) {
-                    helloAR.resizeGL(w, h);
+                synchronized (videoAR) {
+                    videoAR.resizeGL(w, h);
                 }
             }
 
             @Override
             public void onDrawFrame(GL10 gl) {
-                synchronized (helloAR) {
-                    helloAR.render();
+                synchronized (videoAR) {
+                    videoAR.render();
                 }
             }
         });
@@ -60,18 +60,18 @@ public class GLView extends GLSurfaceView {
     @Override
     protected void onAttachedToWindow() {
         super.onAttachedToWindow();
-        synchronized (helloAR) {
-            if (helloAR.initialize()) {
-                helloAR.start();
+        synchronized (videoAR) {
+            if (videoAR.initialize()) {
+                videoAR.start();
             }
         }
     }
 
     @Override
     protected void onDetachedFromWindow() {
-        synchronized (helloAR) {
-            helloAR.stop();
-            helloAR.dispose();
+        synchronized (videoAR) {
+            videoAR.stop();
+            videoAR.dispose();
         }
         super.onDetachedFromWindow();
     }

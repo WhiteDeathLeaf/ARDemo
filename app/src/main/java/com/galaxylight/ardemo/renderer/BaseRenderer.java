@@ -17,30 +17,14 @@ public abstract class BaseRenderer {
     public int vbo_coord_box;
     public int vbo_faces_box;
 
-    public String box_vert = "uniform mat4 trans;\n"
-            + "uniform mat4 proj;\n"
-            + "attribute vec4 coord;\n"
-            + "attribute vec" + setBoxVertInt() + " " + setBoxVertString() + ";\n"
-            + "varying vec" + setBoxVertInt() + " v" + setBoxVertString() + ";\n"
-            + "\n"
-            + "void main(void)\n"
-            + "{\n"
-            + " v" + setBoxVertString() + "=" + setBoxVertString() + ";\n"
-            + " gl_Position = proj*trans*coord;\n"
-            + "}\n"
-            + "\n";
+    public String box_vert = "uniform mat4 trans;uniform mat4 proj;attribute vec4 coord;"
+            + "attribute vec" + setBoxVertInt() + " " + setBoxVertString() + ";"
+            + "varying vec" + setBoxVertInt() + " v" + setBoxVertString() + ";"
+            + "void main(void){v" + setBoxVertString() + "=" + setBoxVertString() + ";gl_Position = proj*trans*coord;}";
 
-    public String box_frag = "#ifdef GL_ES\n"
-            + "precision highp float;\n"
-            + "#endif\n"
-            + "varying vec" + setBoxVertInt() + " v" + setBoxVertString() + ";\n"
-            + setBoxFragString()
-            + "\n"
-            + "void main(void)\n"
-            + "{\n"
-            + "    gl_FragColor =" + setGLFragColor()
-            + "}\n"
-            + "\n";
+    public String box_frag = "#ifdef GL_ES precision highp float;#endif"
+            + "varying vec" + setBoxVertInt() + " v" + setBoxVertString() + ";"
+            + setBoxFragString() + "void main(void){gl_FragColor =" + setGLFragColor() + ";}";
 
     public abstract int setBoxVertInt();
 
